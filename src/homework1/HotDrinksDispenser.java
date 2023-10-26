@@ -1,7 +1,12 @@
-public class HotDrinksDispenser implements Dispenser  {
+package homework1;
 
-    private int volume;
-    private String name;
+import homework1.Dispenser;
+
+public class HotDrinksDispenser implements Dispenser {
+
+    public int volume;
+    public String name;
+
 
     public int getVolume() {
         return volume;
@@ -18,21 +23,24 @@ public class HotDrinksDispenser implements Dispenser  {
     public void setName(String name) {
         this.name = name;
     }
-    public HotDrinksDispenser(int volume, String name) {
-        this.name = name;
-        this.volume = volume;
+    public HotDrinksDispenser() {
+
     }
 
     public HotDrinksDispenser(String name, int volume, int temperature) {
 
     }
 
+    public void orderInfo() {
+    }
+
     @Override
     public void getProduct() {
 
+    }
 
-        System.out.println("Name :" + this.getName());
-        System.out.println("Volume :" + this.getVolume());
-
+    protected void setTemperature(int nextInt) {
     }
 }
+
+
