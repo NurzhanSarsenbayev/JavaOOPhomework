@@ -40,11 +40,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-//        Box<String> box1 = new Box<String>("BOX!");
-//        Box<Integer> box2 = new Box<Integer>(807);
-//        System.out.println(box1.printBoxContents()); //BOX!
-//        System.out.println(box2.printBoxContents()); //807
-//
+        Box<String> box1 = new Box<String>("Nothing!");
+        Box<Integer> box2 = new Box<Integer>(807);
+
+        Box.printBoxContents(box1); //Nothing!
+        Box.printBoxContents(box2); //807
+
+        System.out.println("---------------");
+        System.out.println("---------------");
+
         Pair<Integer,String> pair1 = new Pair<>(10,"what");
         Pair<Double,Character> pair2 = new Pair<>(5.3,'u');
 

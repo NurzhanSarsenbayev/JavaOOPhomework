@@ -18,7 +18,7 @@ public class Box< T > {
     //        Создайте метод printBoxContents, который принимает объект класса Box и выводит на экран содержимое этой коробки.
     //        Обратите внимание, что этот метод должен работать с любым типом объекта, хранящегося в Box.
     //        Используйте обобщенные методы для достижения этой цели.
-    public T printBoxContents(){
-        return this.getBox();
+    public static <T> void printBoxContents(Box<?> box){
+        System.out.println("Inside this box is " + box.getBox() + " which is " + box.getBox().getClass());
     }
 }
